@@ -1,0 +1,80 @@
+.app-shell {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 72px 24px 88px;
+  display: grid;
+  gap: 24px;
+  box-sizing: border-box;
+}
+
+.hero,
+.panel,
+.card {
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+
+.hero {
+  padding: 40px;
+}
+
+.eyebrow {
+  margin: 0 0 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 0.78rem;
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.lede {
+  max-width: 60ch;
+  font-size: 1.05rem;
+}
+
+.panel {
+  padding: 28px;
+}
+
+.checklist {
+  margin: 18px 0 0;
+  padding-left: 1.2rem;
+  display: grid;
+  gap: 12px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.card {
+  padding: 24px;
+}
+
+.card p,
+.panel p,
+.lede,
+.checklist {
+  color: var(--text);
+}
+
+@media (max-width: 800px) {
+  .app-shell {
+    padding: 32px 16px 48px;
+  }
+
+  .hero,
+  .panel,
+  .card {
+    padding: 20px;
+    border-radius: 16px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
